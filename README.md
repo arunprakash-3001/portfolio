@@ -44,10 +44,10 @@ Replace `resumeUrl` in `src/data/profile.js`. It is used everywhere that display
 
 ## Contact form setup
 
-The form is ready for [Formspree](https://formspree.io/) but deliberately has no invented credentials. Create a Formspree form that delivers to `arunsakthikrr@gmail.com`, then create a local `.env` file from `.env.example` and set:
+The contact form is configured for [Formspree](https://formspree.io/) and will deliver through the provided form endpoint in `src/config/contact.js`. Formspree endpoints are public browser URLs, so no secret or API key is committed. It works locally and in the GitHub Pages build without further configuration.
 
 ```env
-VITE_FORMSPREE_ENDPOINT=https://formspree.io/f/yourFormId
+VITE_FORMSPREE_ENDPOINT=https://formspree.io/f/xnjawqnd
 ```
 
-For GitHub Pages, add the same value as an Actions repository variable named `VITE_FORMSPREE_ENDPOINT`. The deployment workflow already reads this variable during its build. Do not commit `.env` or any private keys.
+To change providers or endpoints later, update `src/config/contact.js`. You may optionally override it locally with `VITE_FORMSPREE_ENDPOINT` in `.env`, or in GitHub Actions with a repository variable of the same name. Do not commit private keys.

@@ -28,6 +28,7 @@ On GitHub, open **Settings → Pages**, choose **GitHub Actions** as the source,
 | Name, links, email, phone, resume | `src/data/profile.js` |
 | Projects and live-demo URLs | `src/data/projects.js` |
 | Certifications | `src/data/certifications.js` |
+| Academic achievements and document URLs | `src/data/academicAchievements.js` |
 | Profile photo | Replace `profile.jpeg` in the repository root (keep the same name) |
 
 ### Add a project
@@ -37,6 +38,12 @@ Add one object to the array in `src/data/projects.js`. Include `slug`, `title`, 
 ### Add a certification
 
 Add an object with `name`, `issuer`, `year`, and `credentialUrl` to `src/data/certifications.js`.
+
+### Add an academic achievement
+
+Academic achievement cards are generated from `src/data/academicAchievements.js`. Add another object to that array for a research paper, patent, publication, or similar work. Use a unique `id` and `slug`, then supply `type`, `title`, `shortDescription`, `description`, `documentUrl`, `certificateUrl`, and `documentLabel`. Optional fields such as `year` and `metadata` can be included when they are available.
+
+Update `documentUrl` to change the paper, patent, or publication link, and update `certificateUrl` to change its associated certificate link. Both links open in a new tab on the Academic Achievements page.
 
 ### Update the resume
 

@@ -6,5 +6,5 @@ export const profile = {
   mobile: '8667494310',
   github: 'https://github.com/arunprakash-3001',
   linkedin: 'https://www.linkedin.com/in/arunprakash-s-628921220',
-  resumeUrl: 'https://drive.google.com/file/d/1B3MhV7OrODOd8ub3dV2E-GzSiA6e9dJ_/view?usp=sharing',
+  resumeUrl: 'https://drive.google.com/file/d/1eXqdPKrrOagjmH0o_rz9QIHwOcBQXdM7/view?usp=sharing',
 }
